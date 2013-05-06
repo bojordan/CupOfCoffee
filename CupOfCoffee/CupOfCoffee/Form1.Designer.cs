@@ -37,6 +37,7 @@
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.Menu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.Start = new System.Windows.Forms.ToolStripMenuItem();
+            this.Ticked = new System.Windows.Forms.ToolStripMenuItem();
             this.Quit = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu.SuspendLayout();
             this.SuspendLayout();
@@ -53,7 +54,7 @@
             // 
             // timer1
             // 
-            this.timer1.Interval = 60000;
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // btnStop
@@ -87,21 +88,28 @@
             // 
             this.Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Start,
+            this.Ticked,
             this.Quit});
             this.Menu.Name = "Menu";
-            this.Menu.Size = new System.Drawing.Size(153, 70);
+            this.Menu.Size = new System.Drawing.Size(110, 70);
             // 
             // Start
             // 
             this.Start.Name = "Start";
-            this.Start.Size = new System.Drawing.Size(152, 22);
+            this.Start.Size = new System.Drawing.Size(109, 22);
             this.Start.Text = "Start";
             this.Start.Click += new System.EventHandler(this.Start_Click);
+            // 
+            // Ticked
+            // 
+            this.Ticked.Name = "Ticked";
+            this.Ticked.Size = new System.Drawing.Size(109, 22);
+            this.Ticked.Text = "Ticked";
             // 
             // Quit
             // 
             this.Quit.Name = "Quit";
-            this.Quit.Size = new System.Drawing.Size(152, 22);
+            this.Quit.Size = new System.Drawing.Size(109, 22);
             this.Quit.Text = "Quit";
             this.Quit.Click += new System.EventHandler(this.Quit_Click);
             // 
@@ -134,6 +142,7 @@
         private System.Windows.Forms.ContextMenuStrip Menu;
         private System.Windows.Forms.ToolStripMenuItem Start;
         private System.Windows.Forms.ToolStripMenuItem Quit;
+        private System.Windows.Forms.ToolStripMenuItem Ticked;
     }
 }
 

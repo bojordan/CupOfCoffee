@@ -48,6 +48,7 @@ namespace CupOfCoffee
         {
             SetThreadExecutionState(EXECUTION_STATE.ES_DISPLAY_REQUIRED | EXECUTION_STATE.ES_SYSTEM_REQUIRED | EXECUTION_STATE.ES_CONTINUOUS);
             this.label1.Text = "Ticked last at: " + DateTime.Now.ToLongTimeString();
+            this.Menu.Items["Ticked"].Text = string.Format("Ticked: {0}", DateTime.Now.ToLongTimeString());
         }
 
         private void Start_Click(object sender, EventArgs e)
