@@ -31,13 +31,11 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnStart = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.btnStop = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.Menu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.Start = new System.Windows.Forms.ToolStripMenuItem();
-            this.Ticked = new System.Windows.Forms.ToolStripMenuItem();
             this.Quit = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu.SuspendLayout();
             this.SuspendLayout();
@@ -50,12 +48,6 @@
             this.btnStart.TabIndex = 0;
             this.btnStart.Text = "Stay Awake!";
             this.btnStart.UseVisualStyleBackColor = true;
-            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 60000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // btnStop
             // 
@@ -65,7 +57,6 @@
             this.btnStop.TabIndex = 1;
             this.btnStop.Text = "Stop";
             this.btnStop.UseVisualStyleBackColor = true;
-            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
             // label1
             // 
@@ -80,7 +71,7 @@
             // 
             this.notifyIcon1.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.notifyIcon1.ContextMenuStrip = this.Menu;
-            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIconOn.Icon")));
             this.notifyIcon1.Text = "Cup of Coffee";
             this.notifyIcon1.Visible = true;
             // 
@@ -88,28 +79,21 @@
             // 
             this.Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Start,
-            this.Ticked,
             this.Quit});
             this.Menu.Name = "Menu";
-            this.Menu.Size = new System.Drawing.Size(110, 70);
+            this.Menu.Size = new System.Drawing.Size(99, 48);
             // 
             // Start
             // 
             this.Start.Name = "Start";
-            this.Start.Size = new System.Drawing.Size(109, 22);
+            this.Start.Size = new System.Drawing.Size(98, 22);
             this.Start.Text = "Start";
             this.Start.Click += new System.EventHandler(this.Start_Click);
-            // 
-            // Ticked
-            // 
-            this.Ticked.Name = "Ticked";
-            this.Ticked.Size = new System.Drawing.Size(109, 22);
-            this.Ticked.Text = "Ticked";
             // 
             // Quit
             // 
             this.Quit.Name = "Quit";
-            this.Quit.Size = new System.Drawing.Size(109, 22);
+            this.Quit.Size = new System.Drawing.Size(98, 22);
             this.Quit.Text = "Quit";
             this.Quit.Click += new System.EventHandler(this.Quit_Click);
             // 
@@ -135,14 +119,12 @@
         #endregion
 
         private System.Windows.Forms.Button btnStart;
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button btnStop;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.ContextMenuStrip Menu;
         private System.Windows.Forms.ToolStripMenuItem Start;
         private System.Windows.Forms.ToolStripMenuItem Quit;
-        private System.Windows.Forms.ToolStripMenuItem Ticked;
     }
 }
 
