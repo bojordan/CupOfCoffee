@@ -7,4 +7,4 @@ Releases
 ========
 
 Get the latest build at:
-  https://files.bojordan.com/releases/CupOfCoffee_1.1.0.0.zip
+  http://files.bojordan.com/releases/CupOfCoffee_1.1.0.0.zip
