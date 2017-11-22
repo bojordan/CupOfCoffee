@@ -35,6 +35,7 @@ namespace CupOfCoffee
         {
             //this.Visible = true;
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             ComponentResourceManager resources = new ComponentResourceManager(typeof(Form1));
             _iconOn = (Icon)resources.GetObject("notifyIconOn.Icon");
             _iconOff = (Icon)resources.GetObject("notifyIconOff.Icon");
