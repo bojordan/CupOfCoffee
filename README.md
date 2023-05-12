@@ -1,10 +1,6 @@
 CupOfCoffee
 ===========
 
-Small utility to keep Windows machine screen saver from activating
+A small utility to keep the Windows machine screen saver or screen lock from activating. I find this helpful when group policies are aggressive, or when in an RDP session.
 
-Releases
-========
-
-Get the latest build at:
-  http://files.bojordan.com/releases/CupOfCoffee_1.1.0.0.zip
+I don't often use this utility, as [Windows PowerToys Awake](https://learn.microsoft.com/en-us/windows/powertoys/awake) has replaced it for most of my needs. However, there are cases where I can't install PowerToys, and a single file executable is helpful.
