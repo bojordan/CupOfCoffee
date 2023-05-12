@@ -3,3 +3,7 @@
 ################################################################################
 
 /CupOfCoffee/CupOfCoffee/bin/Debug
+/CupOfCoffee/CupOfCoffee/bin/Release
+/CupOfCoffee/CupOfCoffee/obj
+/CupOfCoffee/CupOfCoffee/CupOfCoffee.csproj.user
+/CupOfCoffee/.vs
